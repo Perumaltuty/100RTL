@@ -12,14 +12,15 @@ initial begin
 
 repeat(10)
 begin
+
 a= $random;
 b= $random;
- #10sel = ~sel;
- $display("a=%0d,b=%0d,c=%0d,sel=%0b",a,b,c,sel);
+ #10 sel = ~sel;
+ $display("a=%0d,b=%0d,c=%0d,sel=%0b",b,a,c,sel);
 if((sel==0)&&(c==a)||(sel==1)&&(c==b)) 
-$display("PASS");
+ $display("PASS");
 else
-$display("FAIL");
+ $display("FAIL");
 end
 end
 
