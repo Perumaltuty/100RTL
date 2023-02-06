@@ -1,0 +1,20 @@
+`timescale 1ns / 1ps
+module tff_sync_reset (
+
+data , 
+clk , 
+reset , 
+q 
+);
+input data, clk, reset ;
+output q;
+reg q;
+always @ ( posedge clk)
+if (~reset) begin
+q <= 1'b0;
+
+end else if (data) begin
+
+q <= !q;
+end
+endmodule
