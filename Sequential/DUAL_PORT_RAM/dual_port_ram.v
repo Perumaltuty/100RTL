@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module dual_port_ram 
      # (parameter data_width=8,
 	      parameter addr_width=4,
