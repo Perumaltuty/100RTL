@@ -18,8 +18,6 @@ fun dut(.a(a),
 
 	      initial
 	      begin
-		      $dumpfile("functionwave.vcd");
-		      $dumpvars;
 		      {a,b,c,d,e} = 5'b00000;
 		      #2{a,b,c,d,e} = 5'b00001;
 		      #2{a,b,c,d,e}  = 5'b00010;
